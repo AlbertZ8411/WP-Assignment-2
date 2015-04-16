@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+		<script src="sc_fun_js.js" ></script>
+		 <title>Silverado Cinema</title>
+
+	</head>
+	<body class="contact_body">	
+	<header class="header_style"> 
+		<img src="./images/silver_cinema2.png"  alt="logo"/>
+	</header>
+	<nav class="nav_a">
+		<a href="index.html">Main</a><a href="#">Contact Us</a><a href="#">About Us</a>
+	</nav>
+	<main>
+		<div class="main_div">
+		<form action="http://titan.csit.rmit.edu.au/~e54061/wp/form-tester.php" method="post">
+
+			<div>
+				<p class="contact_p">Email:<span>*</span></p>
+				</div>
+				<div>
+				<input type="text" name="email" id="email" class="contact_input" onblur="lose_check_email()" value="example@hostname.com" onfocus="focus_check_email()" />
+				<span id="email_p" class="contact_span">Please enter your Email</span>
+				</div>
+				
+			<div>
+			<p class="contact_p">Subject</p>
+			</div>
+			<div>
+				<select name="subject" id="subject" class="contact_select">
+					<option value="General Enquiry">General Enquiry</option>
+					<option value="Group and Corporate Bookings">Group and Corporate Bookings</option>
+					<option value="Suggestions & Complaints">Suggestions & Complaints</option>
+				</select>
+			</div>
+			
+			<div>
+				<p class="contact_p">Message:<span>*</span></p>
+				</div>
+				<div>
+				<textarea class="contact_textarea" name="message" id="message"  onfocus="focus_check_message()" onblur="lose_check_message()">--Please Enter Your Message--</textarea>
+				<span id="message_p" class="contact_span">Please enter your Message</span>
+				</div>
+			<div class="contact_button">
+				<button id="contact_sub_btn" onClick="contact_submit()" disabled>Submit</button>
+			</div>
+		</form>
+		</div>
+		</main>
+	<footer class="footer_style">
+	<span><strong>© Julian Wise</strong> RMIT Student s3514010. <strong>Jiapeng Zhu</strong> RMIT Student s3403275</span>
+		      <a href="http://validator.w3.org/check?uri=referer"><img src="./images/HTML5_Logo_32.png" alt="HTML Validator"></a> |
+		      <a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="./images/vcss-blue" alt="CSS Validator"></a> 
+	</footer>
+
+	</body>
+
+</html>
