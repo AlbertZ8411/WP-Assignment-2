@@ -5,13 +5,16 @@ h1{
 	font-weight: bold;
 	font-size: 60px;
 	display: inline;
+	padding-bottom: 30px;
 }
 
 h2 {
 	font-family: Palatino Linotype, Verdana;
+	font-size: 40px;
 	font-weight: bold;
 	text-align: left;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
+	padding-top: 20px;
 	color: black;
 	}
 
@@ -32,6 +35,7 @@ td, th {
 	text-align:center; 
     vertical-align:middle;
 }
+
 /* Default table colour  */
 .hoverTable tr{
 	background: #e5e5ff;
@@ -62,33 +66,6 @@ text-decoration: underline;
 color: magenta;
 }
 	
-
-#images-1 {
-	margin-top:70px;
-	display: inline-block;
-	margin: 50px;
-	height: 100px;
-	}
-
-#images-2 {
-	margin-top:70px;
-	display: inline-block;
-	margin: 50px;
-	}
-
-#images-3 {
-	margin-top:70px;
-	display: inline-block;
-	margin: 50px;
-	}
-
-#images-4 {
-	margin-top:70px;
-	display: inline-block;
-	margin: 50px;
-	}
-
-	
 .content_images
  {
   width:300px;
@@ -100,9 +77,20 @@ color: magenta;
   width:300px;
   border-radius:5px;
   float: right;
-  height: 200px;
+  height: 270px;
+  border-left: 15px;
+  border-bottom: 10px;
  }
 
+  .index_images
+ {
+  width:300px;
+  border-radius:5px;
+  float: right;
+  height: 200px;
+  border-left: 15px;
+  border-bottom: 10px;
+ }
  
   #images img
   {
@@ -410,4 +398,8 @@ line-height: 100%;
 	border-top-right-radius:0.5em;
 	border-bottom-right-radius:0.5em;
 	box-shadow:0px 1px 2px rgba(0,0,0,0.2);
+}
+
+.timeIndent{
+	margin-left: 15px;
 }
