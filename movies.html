@@ -5,6 +5,10 @@
 		    <meta charset="utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<title>Silverado Cinema</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+		<script src="sc_fun_js.js" ></script>
+		<script src="booking_js.js" ></script>
+
 		</head>
 
 	<body class="header">
@@ -21,8 +25,9 @@
 			<div class="container-fluid">
 				<div class="text-center">
 					<h1> Now playing </h1>
-					<h2>Superman (1941)</h2>
+					<h2  id="mov1_title">Superman (1941)</h2>
 					<div><img class='movie_images' alt="Superman 1941 Classic" src="./images/superman.jpg" /></div>
+					<!--Darjeeling Limited Image Source http://www.afar.com/magazine/the-16-films-that-inspired-us-to-travel -->
 					<p class="lead">Is it a bird? Is it a plane? No its Superman! 
 						<br>Watch the incredible man, faster than a speeding bullet, more powerful than a locomotion in his 
 								most challenging situations to date. 
@@ -30,46 +35,48 @@
 						<br>
 						<br> Rating: 			 PG
 						<br> Genre: 			 Animated, Children
-						<br> Session times:  
-						<br><span class = "timeIndent"> Mon-Tues 1:00pm</span>
-						<br><span class = "timeIndent"> Wed-Fri 12:30pm </span>
-						<br><span class = "timeIndent"> Sat-Sun 12:00pm</span> 
+						<br> Session times: Mon-Tue 1:00 pm  Wed-Fri 6:00 pm Sat-Sun 12:00 pm
 					</p>
+					 <input id="mov1" type="hidden" value="CH" />
+                    <p class="movie_booking_opt"><span id="a1_expand">Expand</span><span id="a1_fold" style="display: none;">Fold</span></p>
+                      <div id="table_container1" style="display: none"></div>
 				</div>
 
 				<div class="text-center">
-					<h2>Phantom of the Opera (1925)</h2>
+					<h2 id="mov2_title">Phantom of the Opera (1925)</h2>
 					<div><img class='movie_images' alt="Phantom of the Opera 1925" src="./images/phantom_1925.jpg" /></div>
+					<!--http://pichost.me/1604148/ -->
 					<p class="lead">The classic silent horror romance brought to life, one murdering at a time.
 												The grand Paris Opera House is so terribly haunted, but by who and what?
 												There will be murder, there will be mayhem, all in the name of true love.
 						<br>
 						<br> Rating: 			 M
 						<br> Genre: 			 Horror, Romance
-						<br>Session times:  
-						<br><span class = "timeIndent"> Mon-Tues 9:00pm</span>
-						<br><span class = "timeIndent"> Wed-Fri 1:00pm </span>
-						<br><span class = "timeIndent"> Sat-Sun 6:00pm</span> 
+						<br> Session times:  Mon-Tue 9:00 pm Wed-Fri 1:00 pm  Sat-Sun 6 pm
 					</p>
+                    <input id="mov2" type="hidden" value="RC" />
+					<p class="movie_booking_opt"><span id="a2_expand">Expand</span><span id="a2_fold" style="display: none;">Fold</span></p>
+                    <div id="table_container2" style="display: none"></div>
 				</div>
 				
 				<div class="text-center">
-					<h2>Sherlock Holmes and The Secret Weapon (1943)</h2>
+					<h2 id="mov3_title">Sherlock Holmes and The Secret Weapon (1943)</h2>
 					<div><img class='movie_images' alt="Sherlock Holmes " src="./images/sherlock.png" /></div>
 					<p class="lead">Do you have an unquenchable taste for mystery? Do you have a sixth sense for crime and mystery?
 											Sherlock Holmes certainly does and Dr. Watson certainly do, but can they solve the Nazi Mystery?
 											Set against the backdrop of World War 2, watch as your two favourite crime solvers face their biggest challenge yet!
-								<br>
-								<br> Rating: 			 M
-								<br> Genre: 			 Action
-								<br> Session times:  
-								<br><span class = "timeIndent"> Wed-Fri 12:30pm </span>
-								<br><span class = "timeIndent"> Sat-Sun  9:00pm</span> 
+							<br>
+							<br> Rating: 			 M
+							<br> Genre: 			 Horror, Romance
+							<br> Session times:  Mon-Tue 9:00 pm Wed-Fri 1:00 pm  Sat-Sun 6 pm
 					</p>
+                    <input id="mov3" type="hidden" value="RC" />
+					 <p class="movie_booking_opt"><span id="a3_expand">Expand</span><span id="a3_fold" style="display: none;">Fold</span></p>
+                      <div id="table_container3" style="display: none"></div>
 				</div>
 				
 				<div class="text-center">
-					<h2>Hemp For Victory (1942)</h2>
+					<h2 id="mov4_title">Hemp For Victory (1942)</h2>
 					<div><img class='movie_images' alt="Hemp For Victory" src="./images/hemp_for_victory_1942.png" /></div>
 					<p class="lead">Do you love seeing US policy turn and back-flip as much as we do?
 											If this is the case prepare yourself for this hallmark film produce by the United State Department of Agriculture
@@ -80,24 +87,23 @@
 							<br>
 							<br> Rating: 			 M
 							<br> Genre: 			 Documentary
-							<br> Session times:  
-						<br><span class = "timeIndent"> Mon-Tues 6:00pm</span>
-						<br><span class = "timeIndent"> Wed-Fri 12:30pm </span>
-						<br><span class = "timeIndent"> Sat-Sun 3:00pm</span> 
-
+							<br> Session times: Mon-Tue 6:00 pm Sat-Sun 3:00 pm
 					</p>
+                    <input id="mov4" type="hidden" value="AF" />
+					 <p class="movie_booking_opt"><span id="a4_expand">Expand</span><span id="a4_fold" style="display: none;">Fold</span></p>
+                      <div id="table_container4" style="display: none"></div>
 				</div>
 			</div><!-- End Bootsrap responsive layout-->
 		</div>
 	</main>
-</body>	
+
 <footer class="footer_style">
 		<span>
-		<strong>© Julian Wise</strong> RMIT Student s3514010. <strong>Jiapeng Zhu</strong> RMIT Student s3403275</span>
+		<strong>? Julian Wise</strong> RMIT Student s3514010. <strong>Jiapeng Zhu</strong> RMIT Student s3403275</span>
 		      <a href="http://validator.w3.org/check?uri=referer"><img src="./images/HTML5_Logo_32.png" alt="HTML Validator"></a> |
 		      <a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="./images/vcss-blue" alt="CSS Validator"></a> 
 		</footer>
-		
+		</body>	
 	</html>
 	
 	<!--All film images are from the United States Public Domain. For more information go to http://en.wikipedia.org/wiki/List_of_films_in_the_public_domain_in_the_United_States
