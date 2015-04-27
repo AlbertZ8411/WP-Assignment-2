@@ -403,3 +403,146 @@ line-height: 100%;
 .timeIndent{
 	margin-left: 15px;
 }
+            .content_table{
+			font-family: "Arial Black", Gadget, sans-serif;
+                border:#ccccff 1px solid;
+                border-color: #000;
+
+            }
+			.content_table select{
+				font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	background-color:#bbf6c2;
+	font-variant: normal;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: center;
+	line-height: 100%;
+	border-top-left-radius:0.5em;
+	border-top-right-radius:0.5em;
+	border-bottom-left-radius:0.5em;
+	border-bottom-right-radius:0.5em;
+	box-shadow:0px 1px 2px rgba(0,0,0,0.2);
+   width: 50px;
+   height: 30px;
+   overflow: hidden;
+   margin-top:0px;
+   text-align:center;
+   border-color:black;
+			}
+            .content_table td{
+			                background-color: #A9A9A9;
+				padding:0px;
+				margin:0px;
+				text-align: center;
+                width: 150px;
+                height: 10px;
+                border:1px solid;
+                border-color: #000;
+				
+            }
+			.content_table td:hover{
+				background-color:black;
+				color:#00FF7F;
+			}
+			.content_sml_td{
+				width:20px;
+				height:20px;
+			}
+			.content_sml_td select{
+				width:20px;
+				height:20px;
+				margin:0px;
+				padding:0px;
+			}
+			.content_big_td {
+				width:110px;
+			}
+			.content_td_sel{
+				width:300px;
+			
+				padding:200px;
+			}
+			.content_td_sel select{
+				width:150px;
+				height:30px;
+				margin:0px;
+			}
+			.payment_title {
+				background-color:white;
+			}
+			.payment_title td{
+				background-color:black;
+				color:#00FF7F;
+			}
+			.movie_booking_opt{
+				width:30px;
+				height:20px;
+			}	
+			.movie_booking_opt span{
+				cursor:pointer;
+
+			}
+            .movie_booking_opt span:hover{
+				background-color:black;
+				color:white;
+			}
+			.movie_booking_opt span:active{
+				background-color:white;
+				color:black;
+			}
+			     .pay_button{
+	width: 80px;
+	height: 50px;
+	text-align: center;
+	line-height: 100%;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	display: inline-block;
+	cursor: pointer;
+	zoom:1;
+	outline-width:medium;
+	outline-color:inherit;
+	font-size-adjust:none;
+	font-stretch:normal;
+	border-top-left-radius:0.5em;
+	border-top-right-radius:0.5em;
+	border-bottom-left-radius:0.5em;
+	border-bottom-right-radius:0.5em;
+	box-shadow:0px 1px 2px rgba(0,0,0,0.2);
+	color:black;
+	border-color:#87CEEB;
+	border-top-width:1px;
+	border-right-width:1px;
+	border-bottom-width:1px;
+	border-left-width:1px;
+	border-top-style:solid;
+	border-right-style:solid;
+	border-bottom-style:solid;
+	border-left-style:solid;
+	background-image:none;
+	background-attachment:scroll;
+	background-repeat:repeat;
+	background-position-x:0%;
+	background-position-y:0%;
+	background-size:auto;
+	background-origin:padding-box;
+	background-clip:padding-box;
+	background-color:#00FF7F;
+}
+.pay_button:disabled {
+	background-color:#168c12;
+	color:black;
+	border-style:dotted;
+}
+.pay_button:hover {
+	background-color:#168c12;
+	color:black;
+	border-style:dotted;
+}
